@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <div class="history" id="history"></div>
+                <div class="input" id="input">0</div>
+                <div class="result" id="result"></div>
+            </div>
+            
+            <div class="options">
+                <div class="angle-mode">
+                    <label class="switch">
+                        <input type="checkbox" id="angle-mode">
+                        <span class="slider"></span>
+                    </label>
+                    <span id="mode-text">RAD</span>
+                </div>
+                <div class="theme-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span id="theme-text">Light</span>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <!-- First row -->
+                <button class="btn function" data-value="(">(</button>
+                <button class="btn function" data-value=")">)</button>
+                <button class="btn function" data-value="mc">MC</button>
+                <button class="btn function" data-value="m+">M+</button>
+                <button class="btn function" data-value="m-">M-</button>
+                <button class="btn function" data-value="mr">MR</button>
+                
+                <!-- Second row -->
+                <button class="btn function" data-value="2nd">2nd</button>
+                <button class="btn function" data-value="sin">sin</button>
+                <button class="btn function" data-value="cos">cos</button>
+                <button class="btn function" data-value="tan">tan</button>
+                <button class="btn operator" data-value="^">x<sup>y</sup></button>
+                <button class="btn clear" data-value="ac">AC</button>
+                
+                <!-- Third row -->
+                <button class="btn function" data-value="x2">x²</button>
+                <button class="btn function" data-value="asin">sin<sup>-1</sup></button>
+                <button class="btn function" data-value="acos">cos<sup>-1</sup></button>
+                <button class="btn function" data-value="atan">tan<sup>-1</sup></button>
+                <button class="btn function" data-value="sqrt">√</button>
+                <button class="btn clear" data-value="del">DEL</button>
+                
+                <!-- Fourth row -->
+                <button class="btn function" data-value="log">log</button>
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+                <button class="btn operator" data-value="/">/</button>
+                <button class="btn operator" data-value="%">%</button>
+                
+                <!-- Fifth row -->
+                <button class="btn function" data-value="ln">ln</button>
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+                <button class="btn operator" data-value="*">×</button>
+                <button class="btn function" data-value="!">!</button>
+                
+                <!-- Sixth row -->
+                <button class="btn function" data-value="e">e</button>
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+                <button class="btn operator" data-value="-">-</button>
+                <button class="btn function" data-value="1/x">1/x</button>
+                
+                <!-- Seventh row -->
+                <button class="btn function" data-value="pi">π</button>
+                <button class="btn function" data-value="+/-">+/-</button>
+                <button class="btn number" data-value="0">0</button>
+                <button class="btn number" data-value=".">.</button>
+                <button class="btn operator" data-value="+">+</button>
+                <button class="btn equals" data-value="=">=</button>
+            </div>
+            
+            <div class="history-panel" id="history-panel">
+                <div class="history-header">
+                    <h3>History</h3>
+                    <button id="clear-history">Clear</button>
+                </div>
+                <div class="history-list" id="history-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
