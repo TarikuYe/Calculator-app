@@ -2,7 +2,7 @@
 
 This is a feature-rich **Scientific Calculator** made using **HTML**, **CSS**, and **JavaScript**, complete with **Night Mode**, **Degree/Radian switching**, and support for scientific operations.
 
-![Calculator Preview](https://imgur.com/a/KxfevYG)
+![Calculator Preview](https://imgur.com/a/KxfevYG.png)
 
 ---
 
